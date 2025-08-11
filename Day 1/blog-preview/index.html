@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Preview</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward"
+    />
+  </head>
+  <body>
+    <!-- Container -->
+    <div
+      style="
+        background-color: #f0f4f4;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+      "
+    >
+      <!-- Section 1 -->
+      <div
+        style="
+          height: 100vh;
+          width: 750px;
+          background-color: white;
+          margin-top: 70px;
+          border-radius: 0 24px;
+          padding: 0 28px;
+          position: relative;
+        "
+      >
+        <!-- Logo -->
+        <div
+          style="
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            top: -35px;
+            left: 100px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+              0 2px 4px -2px rgb(0 0 0 / 0.1);
+          "
+        >
+          <img src="./src/Logo.png" alt="Logo" style="width: 30px" />
+        </div>
+
+        <!-- Content section 1 -->
+        <div
+          style="
+            margin-top: 80px;
+            height: 100vh;
+            padding: 0 75px;
+            position: relative;
+          "
+        >
+          <h1
+            style="
+              font-family: Arial, Helvetica, sans-serif;
+              color: blue;
+              font-weight: 600;
+              letter-spacing: 1px;
+              margin-bottom: 24px;
+            "
+          >
+            Blog Preview Card
+          </h1>
+
+          <p style="font-family: Arial, Helvetica, sans-serif; color: #1c2022">
+            This is a Figma design file for a Frontend Mentor challenge. Figma
+            is a design tool professional teams use to collaborate on projects.
+            Need help using Figma?
+            <a href="#" style="color: #1c2022; font-weight: 600">
+              Read our Figma for developers article
+            </a>
+          </p>
+          <img
+            src="./src/Device.png"
+            alt="Device"
+            style="position: absolute; width: 530px; bottom: 150px"
+          />
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90vh;
+        "
+      >
+        <!-- Card container -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            width: 100%;
+            padding: 0 60px;
+          "
+        >
+          <!-- Card -->
+          <div style="width: 100%; display: flex; gap: 24px">
+            <div>
+              <img
+                src="./src/majesticons_atom-2.png"
+                alt="Atom"
+                style="width: 35px"
+              />
+            </div>
+            <div style="font-family: Arial, Helvetica, sans-serif">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 14px;
+                  font-size: 20px;
+                  font-weight: 600;
+                "
+              >
+                Design System
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </div>
+              <p style="font-size: 14px; color: #1c2022; line-height: 150%">
+                The design system contains all the information for reusable
+                components and styles. It shows colors, typography styles, and
+                components, including various component states if they're
+                interactive.
+              </p>
+            </div>
+          </div>
+
+          <div style="width: 100%; display: flex; gap: 24px">
+            <div>
+              <img
+                src="./src/mingcute_layout-8-fill.png"
+                alt="Atom"
+                style="width: 35px"
+              />
+            </div>
+            <div style="font-family: Arial, Helvetica, sans-serif">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 14px;
+                  font-size: 20px;
+                  font-weight: 600;
+                "
+              >
+                Designs
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </div>
+              <p style="font-size: 14px; color: #1c2022; line-height: 150%">
+                The high-fidelity designs help you build responsive, accessible
+                projects. Aim for precision rather than pixel-perfect replicas.
+                For guidance, see Josh Comeau's
+                <a href="#" style="color: #1c2022"
+                  >"Chasing the Pixel-Perfect Dream."</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
