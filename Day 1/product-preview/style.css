@@ -35,23 +35,27 @@
   font-size: 12px;
   letter-spacing: 5px;
   color: #6c7289;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product-title {
   font-weight: 700;
   line-height: 32px;
+  font-family: "Fraunces", serif;
 }
 
 .product-description {
   font-size: 14px;
-  color: #6c7289; 
+  color: #6c7289;
   line-height: 24px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .price-container {
   display: flex;
   gap: 16px;
   align-items: center;
+  font-family: "Fraunces", serif;
 }
 
 .current-price {
@@ -79,8 +83,34 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .add-to-cart-btn:hover {
   background-color: #1a4032;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  img {
+    max-height: 270px;
+    object-fit: cover;
+  }
+
+  .card {
+    flex-direction: column;
+    max-height: 610px;
+  }
+
+  .card-content {
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .add-to-cart-btn {
+    padding: 14px 16px;
+  }
 }
