@@ -3,16 +3,18 @@ import { FaCheck } from "react-icons/fa";
 
 interface CheckboxProps {
   active: boolean;
+  onChecked: () => void;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({ active }) => {
+const Checkbox: React.FC<CheckboxProps> = ({ active, onChecked }) => {
   return (
     <div
+      onClick={onChecked}
       className={clsx(
-        "relative h-4 w-4 rounded-full p-3 cursor-pointer",
+        "relative h-4 w-4 cursor-pointer rounded-full border-2 p-3",
         active
-          ? "bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"
-          : "border-2 border-[#E3E4F1] dark:border-[#393A4B]",
+          ? "border-white bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 dark:border-[#25273D]"
+          : "border-[#E3E4F1] dark:border-[#393A4B]",
       )}
     >
       {active && (
